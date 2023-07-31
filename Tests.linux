@@ -1,0 +1,36 @@
+$ stripe accounts retrieve --data 
+Wrong number of arguments passed. Expected arguments: account
+$ stripe accounts list --limit 
+{
+"object": "list",
+"data": [],"has_more": 
+false,"url": 
+"/v1/accounts",
+}
+
+$ stripe bank_accounts verify 
+Wrong number of arguments passed. Expected arguments: customer,id
+$ stripe balance retrieve 
+{"object": "balance","available": [
+"0": {… 3 items},],"livemode": false,"pending": ["0": 
+{… 3 items},],}
+$ stripe application_fees list  
+{"object": "list",
+"data": [],"has_more": 
+false,"url": "/v1/application_fees",
+}
+
+$ stripe account_links create --stripe-account 
+
+{"error": {
+"code": "parameter_missing","doc_url": 
+"https://stripe.com/docs/error-codes/parameter-missing",
+"message":"Missing required param: type.","param":"type",
+"request_log_url": "https://dashboard.stripe.com/test/logs/req_jbpAUt2pblpiH6?t=1690802317",
+"type": "invalid_request_error",},
+$ stripe balance_transactions list 
+{"object": "list","data": [],"has_more": false,
+  "url": "/v1/balance_transactions"
+}
+$ stripe apple_pay_domains list  
+{"object":"list","data":[],"has_more":false,"url"}
